@@ -1,0 +1,16 @@
+#ignore FILE TYPES
+#*.xml #not relevant
+#*.msh #not relevant
+*.h5
+*.xdmf
+
+#ignore IPython
+*.ipynb_checkpoints
+*__pycache__*
+
+#ignore FOLDERS
+etc/
+results_mathematica/
+input/
+thermal_edge_flow/
+###############################################

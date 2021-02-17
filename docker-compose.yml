@@ -1,0 +1,36 @@
+version: '3.2'
+
+services:
+  fenics_rx_from_git:
+    image: registry.git.rwth-aachen.de/bert.edil/fenics_rx:latest
+    working_dir: /home/fenics/shared
+    volumes:
+      - type: bind
+        source: .
+        target: /home/fenics/shared
+      - type: volume
+        source: instant-cache
+        target: /home/fenics/.cache
+        volume:
+          nocopy: true
+    stdin_open: true
+    tty: true
+  fenics_rx_local:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /home/fenics/shared
+    volumes:
+      - type: bind
+        source: .
+        target: /home/fenics/shared
+      - type: volume
+        source: instant-cache
+        target: /home/fenics/.cache
+        volume:
+          nocopy: true
+    stdin_open: true
+    tty: true
+  
+volumes:
+  instant-cache:

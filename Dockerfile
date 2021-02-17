@@ -25,7 +25,7 @@ ENV PATH=/usr/local/gmsh-${GMSH_VERSION}-Linux64-sdk/bin:$PATH
 # Install any needed packages specified in requirements.txt
 # RUN pip install --trusted-host pypi.python.org -r requirements.txt
 COPY requirements.txt /tmp/
-RUN pip3 install --requirement /tmp/requirements.txt
+RUN pip3 install --requirement /tmp/requirements_f2me.txt
 
 # Install the fenicsR13 package (puts it into the PATH)
 #COPY . /tmp/

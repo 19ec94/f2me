@@ -3,7 +3,7 @@
 #*.msh #not relevant
 *.h5
 *.xdmf
-*.yml #no input file
+#*.yml #no input file
 
 #ignore IPython
 *.ipynb #no jupyter notebook
@@ -12,7 +12,7 @@
 
 #ignore FOLDERS
 etc/
-results_mathematica/
 input/
+results_mathematica/
 thermal_edge_flow/
 ###############################################

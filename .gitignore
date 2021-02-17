@@ -1,13 +1,14 @@
 #ignore FILE TYPES
-#*.xml #not relevant
-#*.msh #not relevant
+*.xml #not relevant
+*.msh #not relevant
 *.h5
 *.xdmf
-#*.yml #no input file
+*.yml #no input file
 
 #ignore IPython
-*.ipynb #no jupyter notebook
+*/*.ipynb #no jupyter notebook
 *.ipynb_checkpoints
+*/.ipynb_checkpoints/*
 *__pycache__*
 
 #ignore FOLDERS

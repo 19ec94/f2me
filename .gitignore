@@ -3,8 +3,10 @@
 #*.msh #not relevant
 *.h5
 *.xdmf
+*.yml #no input file
 
 #ignore IPython
+*.ipynb #no jupyter notebook
 *.ipynb_checkpoints
 *__pycache__*
 
